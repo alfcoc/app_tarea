@@ -1,0 +1,289 @@
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #34495e;
+}
+
+.contenido {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  background: #3498db;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.titulo {
+  font-size: 1.3rem;
+  margin: 0px 0px 20px 0px;
+}
+
+.formulario-fila {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.formulario-grupo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario-input, .formulario-select, .formulario-textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formulario-textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.formulario-boton {
+  background: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+}
+
+.formulario-boton:hover {
+  background: #0056b3;
+}
+
+.tableros {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tableros th, .tableros td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tableros th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.tableros th button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tableros th button:hover {
+  text-decoration: underline;
+}
+
+.filtros {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 20px;
+}
+
+.filtros input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.filtros input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.filtros input::placeholder {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .filtros {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filtros input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  list-style: none;
+  gap: 20px;
+}
+
+.pagination .active {
+  background-color: #149e1b;
+  border-radius: 3px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botones-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.boton-editar {
+  background: #149e1b;
+  width: 50%;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+}
+.boton-editar:hover {
+  background: #0e7514;
+}
+
+.boton-borrar {
+  background: #d10000;
+  width: 50%;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+}
+.boton-borrar:hover {
+  background: #9c0000;
+}
+
+@media (max-width: 768px) {
+  .formulario-fila {
+    flex-direction: column;
+  }
+}
+
+.listados {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-footer {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.notificaciones {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.notificaciones ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notificaciones li {
+  padding: 5px 0;
+}

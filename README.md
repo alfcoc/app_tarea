@@ -20,7 +20,7 @@ Aplicación web para gestionar tareas con autenticación, roles de usuario, noti
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/tareas.git
+git clone https://github.com/alfcoc/tareas.git
 cd tareas
 ```
 

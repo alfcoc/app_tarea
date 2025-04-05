@@ -172,8 +172,8 @@ Despliegue en Heroku / Vercel
 
 ## Autor
 
-Desarrollado por **[Tu Nombre Aquí]**  
-Contacto: [tu-email@ejemplo.com]
+Desarrollado por Jesus Alfredo Maza Sánchez
+Contacto: alfredomaza@mnweb.com.co
 
 ---
 
